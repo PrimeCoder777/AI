@@ -121,10 +121,43 @@
                 transform: translateY(0);
             }
         }
+        .navbar {
+      position: fixed;
+      width: 100%;
+      background: rgba(255,255,255,0.15); /* Transparent white */
+      backdrop-filter: blur(10px);        /* Glass blur effect */
+      -webkit-backdrop-filter: blur(10px);/* Safari support */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      z-index: 15;
+      top: 0;
+    }
+    .navbar a {
+      color: #000;
+      padding: 16px 24px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+  /*  .navbar a:hover {
+      background: #444;
+    } */
+
     </style>
 </head>
 <body>
-    <div class="header">Chat Assistant</div>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="">Games</a>
+    <a href="proxy.html">Pr0xy</a>
+    <a href="extra.html">Extra</a>
+    <a href="https://ubgvortex.github.io/AI">AI</a>
+  </div>
     <div class="container">
         <div id="chatbox" class="chatbox"></div>
         <div class="input-area">
